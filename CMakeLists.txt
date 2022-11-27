@@ -16,10 +16,4 @@ add_library(felix
 target_link_libraries(felix Boost::locale)
 target_include_directories(felix PUBLIC include)
 
-add_executable(felix_main
-        main.cpp
-)
-
-target_link_libraries(felix_main felix)
-
 add_subdirectory(catch)

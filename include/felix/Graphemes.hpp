@@ -14,12 +14,11 @@ public:
     using const_iterator = typename Segmenter::const_iterator;
 
     explicit Graphemes(StringTypeIterator begin, StringTypeIterator end)
-            :
-            segments{
-                    boost::locale::boundary::character,
-                    begin,
-                    end,
-                    boost::locale::generator{}("")
+            : segments{
+                boost::locale::boundary::character,
+                begin,
+                end,
+                boost::locale::generator{}("")
             }
     {}
 

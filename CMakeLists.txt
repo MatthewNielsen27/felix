@@ -8,6 +8,7 @@ find_package(Boost COMPONENTS locale REQUIRED)
 
 add_library(felix
         include/felix/String.hpp
+        include/felix/StringStorage.hpp
         include/felix/Graphemes.hpp
         src/String.cpp
 )
